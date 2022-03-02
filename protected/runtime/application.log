@@ -1,0 +1,1300 @@
+2022/02/27 14:03:25 [error] [exception.CException] CException: Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\task\framework\YiiBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\YiiBase.php(204): YiiBase::import('user.UserModule', true)
+#1 C:\xampp\htdocs\task\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'user', NULL, Array)
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(337): CModule->getModule('user')
+#3 C:\xampp\htdocs\task\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#5 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 14:04:15 [error] [exception.CException] CException: Alias "user.UserModule" is invalid. Make sure it points to an existing PHP file and the file is readable. in C:\xampp\htdocs\task\framework\YiiBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\YiiBase.php(204): YiiBase::import('user.UserModule', true)
+#1 C:\xampp\htdocs\task\framework\base\CModule.php(282): YiiBase::createComponent(Array, 'user', NULL, Array)
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(337): CModule->getModule('user')
+#3 C:\xampp\htdocs\task\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#5 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 14:04:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.emedx_admin' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `emedx_admin`.
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (8)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 14:04:33 [error] [exception.CDbException] CDbException: The table "emedx_admin" for active record class "EmedxAdminLogin" cannot be found in the database. in C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php:2390
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(EmedxAdminLogin))
+#1 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(8): CActiveRecord->__construct()
+#3 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#4 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 14:08:37 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.emedx_admin' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `emedx_admin`.
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (8)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 14:08:37 [error] [exception.CDbException] CDbException: The table "emedx_admin" for active record class "EmedxAdminLogin" cannot be found in the database. in C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php:2390
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(413): CActiveRecordMetaData->__construct(Object(EmedxAdminLogin))
+#1 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(8): CActiveRecord->__construct()
+#3 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#4 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 14:15:10 [error] [exception.CException] CException: Property "UserLogin.id" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php(37): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(105): UserAuthenticity->authenticate()
+#3 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#4 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#10 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:20:12 [error] [exception.CException] CException: UserLogin and its behaviors do not have a method or closure named "login". in C:\xampp\htdocs\task\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(229): CComponent->__call('login', Array)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): CActiveRecord->__call('login', Array)
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:20:31 [error] [exception.CException] CException: UserLogin and its behaviors do not have a method or closure named "login". in C:\xampp\htdocs\task\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(229): CComponent->__call('login', Array)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): CActiveRecord->__call('login', Array)
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:21:16 [error] [exception.CException] CException: UserLogin and its behaviors do not have a method or closure named "login". in C:\xampp\htdocs\task\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(229): CComponent->__call('login', Array)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): CActiveRecord->__call('login', Array)
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:21:56 [error] [exception.CException] CException: Property "UserLogin._identity" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(145): CComponent->__get('_identity')
+#1 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(102): CActiveRecord->__get('_identity')
+#2 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#3 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#4 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:26:57 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function UserAuthenticity::__construct(), 2 passed in C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php on line 105 and exactly 3 expected in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:14
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(105): UserAuthenticity->__construct('mike@task.com', 'mike@1234')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:51:07 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function UserAuthenticity::__construct(), 2 passed in C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php on line 105 and exactly 3 expected in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:14
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(105): UserAuthenticity->__construct('mike@task.com', 'mike@1234')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:58:00 [error] [exception.Error] Error: Object of class UserLogin could not be converted to string in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:22
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(106): UserAuthenticity->authenticate()
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:59:09 [error] [exception.CException] CException: Property "CWebUser.full_name" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('full_name')
+#1 C:\xampp\htdocs\task\protected\views\layouts\main.php(36): CWebUser->__get('full_name')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\task\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\task\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\task\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\task\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\task\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\task\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#20 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/task/site?error=unauthorizeAccess
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 14:59:37 [error] [exception.CException] CException: Property "CWebUser.getId" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('getId')
+#1 C:\xampp\htdocs\task\protected\views\layouts\main.php(36): CWebUser->__get('getId')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\task\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\task\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\task\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\task\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\task\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\task\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#15 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#20 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/task/site?error=unauthorizeAccess
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:11:37 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:15:37 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/user')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/user
+HTTP_REFERER=http://localhost/task/gii/crud/index
+---
+2022/02/27 15:16:26 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:16:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.emedx_doc' doesn't exist. The SQL statement executed was: SELECT COUNT(id) FROM emedx_doc.
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php (55)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 15:16:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'task.emedx_doc' doesn't exist. The SQL statement executed was: SELECT COUNT(id) FROM emedx_doc in C:\xampp\htdocs\task\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(55): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#12 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#13 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:17:19 [error] [php] Attempt to read property "baseUrl" on null (C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php:5)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(872): DashboardController->renderFile()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(785): DashboardController->renderPartial()
+#4 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(60): DashboardController->render()
+#5 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(134): DashboardController->runAction()
+#8 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\task\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): DashboardController->filterAccessControl()
+#11 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\task\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#14 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DashboardController->run()
+#15 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user/dashboard/index
+in C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php (5)
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php (60)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 15:26:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "editor". in C:\xampp\htdocs\task\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(270): CController->missingAction('editor')
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('editor')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('site/editor')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/site/editor
+---
+2022/02/27 15:27:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "dashboard". in C:\xampp\htdocs\task\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('site/dashboard/...')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/site/dashboard/editor
+---
+2022/02/27 15:27:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "user/editor". in C:\xampp\htdocs\task\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/editor')
+#1 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/task/user/editor
+---
+2022/02/27 15:28:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "dashboard". in C:\xampp\htdocs\task\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/user/dashb...')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/user/user/dashboard/visitor
+HTTP_REFERER=http://localhost/task/user/dashboard/editor
+---
+2022/02/27 15:47:17 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:49:48 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:49:49 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:49:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:50:17 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:52:10 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 15:52:13 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+---
+2022/02/27 16:03:35 [error] [php] Undefined array key "role" (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (26)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:27:04 [error] [exception.CException] CException: Property "CWebUser.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(27): CWebUser->__get('role')
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:27:35 [error] [exception.CException] CException: Property "CWebUser.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(27): CWebUser->__get('role')
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:29:52 [error] [php] Undefined variable $role (C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(105): UserAuthenticity->__construct()
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php (18)
+in C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php (105)
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (25)
+2022/02/27 16:30:15 [error] [php] Undefined variable $role (C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(105): UserAuthenticity->__construct()
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php (18)
+in C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php (105)
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (25)
+2022/02/27 16:39:44 [error] [exception.CException] CException: Property "UserLogin.user1@task.com" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(145): CComponent->__get('user1@task.com')
+#1 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(1900): CActiveRecord->__get('user1@task.com')
+#2 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(1359): CActiveRecord->populateRecords(Array, true, 'user1@task.com')
+#3 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(30): CActiveRecord->findAll(Object(CDbCriteria))
+#5 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#11 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:41:53 [error] [exception.CDbException] CDbException: Table "user" does not have a column named "select". in C:\xampp\htdocs\task\framework\db\schema\CDbCommandBuilder.php:697
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\db\ar\CActiveRecord.php(1543): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Object(CDbCriteria), '', Array, '`t`.')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(30): CActiveRecord->findAllByAttributes(Object(CDbCriteria))
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:43:29 [error] [php] Attempt to read property "role" on array (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (32)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:43:43 [error] [php] Undefined array key "role" (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (32)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:44:17 [error] [php] Attempt to read property "role" on array (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (32)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:44:52 [error] [php] Attempt to read property "role" on array (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (28)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:45:12 [error] [php] Attempt to read property "role" on array (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (28)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:45:28 [error] [php] Undefined array key "role" (C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): DefaultController->runAction()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DefaultController->run()
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php (28)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 16:45:56 [error] [exception.Error] Error: Cannot use object of type DefaultController as array in C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php:28
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#1 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#6 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:46:04 [error] [exception.CException] CException: Property "DefaultController.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(28): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#7 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:51:08 [error] [exception.CException] CException: Property "CWebUser.getState" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('getState')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(32): CWebUser->__get('getState')
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:51:27 [error] [exception.CException] CException: Property "CWebUser.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\protected\views\layouts\main.php(37): CWebUser->__get('role')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\task\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\task\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\task\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\task\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\task\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(51): CController->render('login', Array)
+#14 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#20 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 16:52:13 [error] [exception.CException] CException: Property "CWebUser.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\protected\views\layouts\main.php(37): CWebUser->__get('role')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\task\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\task\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\task\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\task\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\task\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(51): CController->render('login', Array)
+#14 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#20 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 16:52:15 [error] [exception.CException] CException: Property "CWebUser.role" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('role')
+#1 C:\xampp\htdocs\task\protected\views\layouts\main.php(37): CWebUser->__get('role')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\task\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampp\htdocs\task\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampp\htdocs\task\framework\web\CBaseController.php(215): COutputProcessor->run()
+#8 C:\xampp\htdocs\task\framework\web\CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampp\htdocs\task\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\task\framework\web\CController.php(787): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(51): CController->render('login', Array)
+#14 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#15 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#19 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#20 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/task/user
+---
+2022/02/27 16:52:28 [error] [exception.CException] CException: Property "CWebUser.getState" is not defined. in C:\xampp\htdocs\task\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CWebUser.php(146): CComponent->__get('getState')
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(32): CWebUser->__get('getState')
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 16:55:06 [error] [exception.Error] Error: Object of class UserLogin could not be converted to string in C:\xampp\htdocs\task\protected\modules\user\components\UserAuthenticity.php:22
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\models\UserLogin.php(106): UserAuthenticity->authenticate()
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(25): UserLogin->login()
+#2 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#8 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 17:01:23 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 17:01:39 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user
+---
+2022/02/27 17:01:51 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/editor
+---
+2022/02/27 17:06:21 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/editor
+---
+2022/02/27 17:07:44 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('visitor')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/visitor
+HTTP_REFERER=http://localhost/task/user/dashboard/editor
+---
+2022/02/27 17:07:46 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/editor
+---
+2022/02/27 17:08:36 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('editor')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/editor
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:08:38 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:16:38 [error] [php] Undefined array key "username" (C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(872): DashboardController->renderFile()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(785): DashboardController->renderPartial()
+#4 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(60): DashboardController->render()
+#5 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(134): DashboardController->runAction()
+#8 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\task\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): DashboardController->filterAccessControl()
+#11 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\task\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#14 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DashboardController->run()
+#15 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user/dashboard/index
+in C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php (14)
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php (60)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 17:16:55 [error] [php] Attempt to read property "username" on array (C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#2 C:\xampp\htdocs\task\framework\web\CController.php(872): DashboardController->renderFile()
+#3 C:\xampp\htdocs\task\framework\web\CController.php(785): DashboardController->renderPartial()
+#4 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(60): DashboardController->render()
+#5 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(134): DashboardController->runAction()
+#8 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\task\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): DashboardController->filterAccessControl()
+#11 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\task\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#14 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): DashboardController->run()
+#15 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\task\index.php(13): CWebApplication->run()
+REQUEST_URI=/task/user/dashboard/index
+in C:\xampp\htdocs\task\protected\modules\user\views\dashboard\index.php (14)
+in C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php (60)
+in C:\xampp\htdocs\task\index.php (13)
+2022/02/27 17:25:42 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:27:24 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:27:25 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:27:29 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:27:33 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/
+---
+2022/02/27 17:30:53 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/index
+HTTP_REFERER=http://localhost/task/
+---
+2022/02/27 17:31:01 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('editor')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/editor
+HTTP_REFERER=http://localhost/task/
+---
+2022/02/27 17:33:52 [error] [exception.ParseError] ParseError: syntax error, unexpected token "=>" in C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php:24
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CWebApplication.php(338): CWebApplication->createController('visitor/', Object(UserModule))
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(276): CWebApplication->createController('dashboard/visit...')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/user/dashboard/visitor
+HTTP_REFERER=http://localhost/task/
+---
+2022/02/27 17:34:20 [error] [exception.CException] CException: DashboardController cannot find the requested view "uaccess". in C:\xampp\htdocs\task\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(785): CController->renderPartial('uaccess', NULL, true)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(55): CController->render('uaccess')
+#2 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(143): DashboardController->goToLogin(Object(CAccessRule))
+#3 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('editor')
+#10 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#11 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/task/user/dashboard/editor
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:34:49 [error] [exception.CException] CException: DashboardController cannot find the requested view "uaccess". in C:\xampp\htdocs\task\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(785): CController->renderPartial('uaccess', NULL, true)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(55): CController->render('uaccess')
+#2 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(143): DashboardController->goToLogin(Object(CAccessRule))
+#3 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('editor')
+#10 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#11 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/task/user/dashboard/editor
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:35:40 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "dashboard". in C:\xampp\htdocs\task\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(270): CController->missingAction('dashboard')
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('dashboard')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/user/dashboard/dashboard/uaccess
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:35:52 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "uaccess". in C:\xampp\htdocs\task\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(270): CController->missingAction('uaccess')
+#1 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('uaccess')
+#2 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#3 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/task/user/dashboard/uaccess
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:37:06 [error] [exception.CException] CException: DashboardController and its behaviors do not have a method or closure named "Uaccess". in C:\xampp\htdocs\task\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(143): CComponent->__call('Uaccess', Array)
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('uaccess')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/uaccess
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:37:07 [error] [exception.CException] CException: DashboardController and its behaviors do not have a method or closure named "Uaccess". in C:\xampp\htdocs\task\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(143): CComponent->__call('Uaccess', Array)
+#1 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('uaccess')
+#8 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#9 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/task/user/dashboard/uaccess
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 17:37:58 [error] [exception.CException] CException: DashboardController cannot find the requested view "uaccess". in C:\xampp\htdocs\task\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\task\framework\web\CController.php(785): CController->renderPartial('uaccess', NULL, true)
+#1 C:\xampp\htdocs\task\protected\modules\user\controllers\DashboardController.php(57): CController->render('uaccess')
+#2 C:\xampp\htdocs\task\framework\web\auth\CAccessControlFilter.php(143): DashboardController->goToLogin(Object(CAccessRule))
+#3 C:\xampp\htdocs\task\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#4 C:\xampp\htdocs\task\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\task\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\task\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\task\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('uaccess')
+#10 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user/dashboard/...')
+#11 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/task/user/dashboard/uaccess
+HTTP_REFERER=http://localhost/task/user/dashboard/visitor
+---
+2022/02/27 18:01:29 [error] [exception.CException] CException: DefaultController has an extra endWidget() call in its view. in C:\xampp\htdocs\task\framework\web\CBaseController.php:219
+Stack trace:
+#0 C:\xampp\htdocs\task\protected\modules\user\views\default\login.php(64): CBaseController->endWidget()
+#1 C:\xampp\htdocs\task\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\task\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\task\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\task\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#5 C:\xampp\htdocs\task\protected\modules\user\controllers\DefaultController.php(54): CController->render('login', Array)
+#6 C:\xampp\htdocs\task\framework\web\actions\CInlineAction.php(49): DefaultController->actionIndex()
+#7 C:\xampp\htdocs\task\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\task\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\task\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\task\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\xampp\htdocs\task\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#12 C:\xampp\htdocs\task\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\task\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/task/user
+HTTP_REFERER=http://localhost/task/
+---
