@@ -1,11 +1,9 @@
 # Yii-simple-user-authentication
- Simple and easy authentication for Yii1 and Yii2\
-Simple user authentication, sign-in and permission management.\
-The user can sign in to the site with username and password.\
-<ol>
+Simple and easy authentication, sign-in and permission management in Yii1 and Yii2.\
+The user can sign in to the site with username or email and password.
+<ul>
 <li>The user data is stored in a database.</li>
-<li>The signed in user go to a central administration page, where they can see in the menu the subpages they have permission to access.</li>
-<li>The user can sign out from the website by clicking the logout button on the menu.</li>
+<li>The signed in user will be redirect to the dashboard page, where they can access in the menu or pages, the subpages for which they have permission.</li>
+<li>Each user will have their last login time, current IP from they logged in.</li>
 </ol>
-#After three failed sign-in attempts, on the subsequent attempts the user should solve a CAPTCHA\
-#picture test next to entering the username and the password.
+#After three failed sign-in attempts, the user should solve a CAPTCHA.
